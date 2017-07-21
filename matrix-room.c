@@ -732,7 +732,7 @@ static gboolean _handle_incoming_image(PurpleConversation *conv,
             }
         }
         purple_debug_info("matrixprpl", "image info good: %s of %" PRId64,
-                          mime_type, size);
+                          mime_type, (long long)size);
     }
 
     rid = g_new0(struct ReceiveImageData, 1);
