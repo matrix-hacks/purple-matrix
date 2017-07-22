@@ -26,3 +26,5 @@ https://github.com/majn/telegram-purple
 https://github.com/tripplet/Adium-Steam-IM
 
 https://github.com/tripplet/adium-mattermost
+
+https://github.com/tripplet/skypeweb4adium
