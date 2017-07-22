@@ -21,7 +21,6 @@
 		7A755E221F22BE8B00E8D364 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A755E211F22BE8B00E8D364 /* Adium.framework */; };
 		7A755E241F22BE8F00E8D364 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A755E231F22BE8F00E8D364 /* AdiumLibpurple.framework */; };
 		7A755E261F22BE9B00E8D364 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A755E251F22BE9B00E8D364 /* Cocoa.framework */; };
-		7A755E281F22E73C00E8D364 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7A755E271F22E73B00E8D364 /* README.md */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		92F887B80F53AE4F0039CBA9 /* MXMatrixAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */; };
 		92F887B90F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */; };
@@ -75,7 +74,6 @@
 		7A755E211F22BE8B00E8D364 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "../../../Library/Developer/Xcode/DerivedData/Adium-ddovwiajjgxavcegcxwyjjdghosb/Build/Products/Debug/Adium.app/Contents/Frameworks/Adium.framework"; sourceTree = "<group>"; };
 		7A755E231F22BE8F00E8D364 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = "../../../Library/Developer/Xcode/DerivedData/Adium-ddovwiajjgxavcegcxwyjjdghosb/Build/Products/Debug/Adium.app/Contents/Frameworks/AdiumLibpurple.framework"; sourceTree = "<group>"; };
 		7A755E251F22BE9B00E8D364 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		7A755E271F22E73B00E8D364 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* AdiumMatrix.AdiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumMatrix.AdiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92F887B20F53AE4F0039CBA9 /* MXMatrixAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMatrixAccount.h; sourceTree = "<group>"; };
@@ -103,13 +101,7 @@
 		089C166AFE841209C02AAC07 /* AdiumMatrix */ = {
 			isa = PBXGroup;
 			children = (
-				7A755E271F22E73B00E8D364 /* README.md */,
-				92F887B20F53AE4F0039CBA9 /* MXMatrixAccount.h */,
-				92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */,
-				92F887B40F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.h */,
-				92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */,
-				92F887B60F53AE4F0039CBA9 /* MXMatrixService.h */,
-				92F887B70F53AE4F0039CBA9 /* MXMatrixService.m */,
+				7A755E2D1F23B6E100E8D364 /* adium-matrix */,
 				7A755E001F22A66600E8D364 /* purple-matrix */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -181,6 +173,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A755E2D1F23B6E100E8D364 /* adium-matrix */ = {
+			isa = PBXGroup;
+			children = (
+				92F887B20F53AE4F0039CBA9 /* MXMatrixAccount.h */,
+				92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */,
+				92F887B40F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.h */,
+				92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */,
+				92F887B60F53AE4F0039CBA9 /* MXMatrixService.h */,
+				92F887B70F53AE4F0039CBA9 /* MXMatrixService.m */,
+			);
+			name = "adium-matrix";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,7 +255,6 @@
 				7A755DFF1F22A66000E8D364 /* matrix-sync.c in Sources */,
 				7A755DFD1F22A66000E8D364 /* matrix-roommembers.c in Sources */,
 				92F887B90F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m in Sources */,
-				7A755E281F22E73C00E8D364 /* README.md in Sources */,
 				7A755DFB1F22A66000E8D364 /* matrix-json.c in Sources */,
 				7A755DFA1F22A66000E8D364 /* matrix-event.c in Sources */,
 				7A755DF81F22A66000E8D364 /* matrix-api.c in Sources */,

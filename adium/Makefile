@@ -12,6 +12,8 @@ clean:
 	rm -rf ./build
 
 install:
+	rm -rf $(ADIUM_PLUGINS_DIR)/AdiumMatrix.AdiumLibpurplePlugin
 	cp -r ./build/$(BUILDCONFIGURATION)/AdiumMatrix.AdiumLibpurplePlugin $(ADIUM_PLUGINS_DIR)
+	test -d $(ADIUM_PLUGINS_DIR)/AdiumMatrix.AdiumLibpurplePlugin
 
 .PHONY: build clean install
