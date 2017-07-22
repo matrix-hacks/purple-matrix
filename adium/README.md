@@ -14,3 +14,15 @@ link or wire in purple-matrix.
 
 It should probably also live in an /adium subdirectory of purple-matrix
 but I'm not going to check it in there given it's totally WIP.
+
+## Development Resources
+
+Searching for the wrapper classes on github: https://github.com/search?p=2&q=CBPurpleAccount&type=Code&utf8=%E2%9C%93
+
+Good examples (libpidgin service plugins with adium wrappers)
+
+https://github.com/majn/telegram-purple
+
+https://github.com/tripplet/Adium-Steam-IM
+
+https://github.com/tripplet/adium-mattermost

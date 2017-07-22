@@ -90,14 +90,9 @@
 
 - (NSImage *)defaultServiceIconOfType:(AIServiceIconType)iconType
 {
-	if (iconType == AIServiceIconSmall)
-    {
-        return [NSImage imageNamed:@"matrix-16px" forClass:[self class] loadLazily:YES];
-    }
-    else if (iconType == AIServiceIconLarge)
-    {
-        return [NSImage imageNamed:@"matrix-48px" forClass:[self class] loadLazily:YES];
-    }
+    int px = iconType == AIServiceIconLarge ? 48 : 16;
+    NSString *imgName = [NSString stringWithFormat:@"matrix-%dpx", px];
+    return [NSImage imageNamed: imgName forClass:[self class] loadLazily:YES];
 }
 
 - (void)registerStatuses{

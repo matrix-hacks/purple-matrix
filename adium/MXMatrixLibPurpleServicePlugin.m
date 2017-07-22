@@ -20,13 +20,14 @@ extern BOOL purple_init_plugin(void);
 {
     [MXMatrixService registerService];
     AILog(@"Installing Matrix Plugin");
-    purple_init_matrix_plugin();
+
 }
 
 
 - (void)loadLibpurplePlugin
 {
 	AILog(@"Loading Matrix Plugin");
+    purple_init_matrix_plugin();
 }
 
 - (void) installLibpurplePlugin
